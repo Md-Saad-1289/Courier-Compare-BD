@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Delivery Compare BD</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container nav">
+
+        <div class="logo">
+            🚚 <span>Delivery Compare BD</span>
+        </div>
+
+
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-card">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    Compare Courier Charges Instantly
+                </div>
+
+                <h1 class="hero-title">
+                    Find The Cheapest & Fastest Courier In Bangladesh
+                </h1>
+
+                <p class="hero-subtitle">
+                    Compare delivery charges, delivery times, coverage areas,
+                    COD fees and courier performance from one place.
+                </p>
+
+            </div>
+
+            <!-- FORM -->
+
+            <div class="calculator-card">
+
+                <h2 class="form-title">
+                    Shipment Calculator
+                </h2>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Pickup District</label>
+                        <select id="pickup">
+                            <option>Dhaka</option>
+                            <option>Chattogram</option>
+                            <option>Khulna</option>
+                            <option>Rajshahi</option>
+                            <option>Sylhet</option>
+                            <option>Barishal</option>
+                            <option>Rangpur</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Delivery District</label>
+                        <select id="delivery">
+                            <option>Dhaka</option>
+                            <option>Chattogram</option>
+                            <option>Khulna</option>
+                            <option>Rajshahi</option>
+                            <option>Sylhet</option>
+                            <option>Barishal</option>
+                            <option>Rangpur</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Weight (KG)</label>
+                        <input
+                        type="number"
+                        id="weight"
+                        value="1"
+                        min="1"
+                        placeholder="Enter Weight">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Cash On Delivery</label>
+                        <select id="cod">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button
+                class="compare-btn"
+                onclick="compareCouriers()">
+
+                Compare Couriers
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h2>5+</h2>
+                <p>Courier Partners</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>64</h2>
+                <p>District Coverage</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>100%</h2>
+                <p>Free Comparison</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>24/7</h2>
+                <p>Available</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESULT SUMMARY -->
+
+<section class="summary-section">
+
+    <div class="container">
+
+        <div id="summary" class="summary-grid">
+
+            <!-- JS Insert -->
+
+            <div class="summary-card cheapest">
+
+                <div class="summary-icon">
+                    🏆
+                </div>
+
+                <h4>Cheapest Courier</h4>
+
+                <h2>RedX</h2>
+
+                <p>৳80 Delivery Cost</p>
+
+            </div>
+
+            <div class="summary-card fastest">
+
+                <div class="summary-icon">
+                    ⚡
+                </div>
+
+                <h4>Fastest Courier</h4>
+
+                <h2>Steadfast</h2>
+
+                <p>1 Day Delivery</p>
+
+            </div>
+
+            <div class="summary-card best">
+
+                <div class="summary-icon">
+                    ⭐
+                </div>
+
+                <h4>Best Rated</h4>
+
+                <h2>Pathao</h2>
+
+                <p>4.8 Rating</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COURIER RESULTS -->
+
+<section class="results-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Courier Comparison
+            </h2>
+
+            <p>
+                Compare all available delivery services
+            </p>
+
+        </div>
+
+        <div id="results" class="results-grid">
+
+            <!-- JS Insert -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RECENT SEARCHES -->
+
+<section class="history-section">
+
+    <div class="container">
+
+        <div class="history-box">
+
+            <div class="history-header">
+
+                <h2>
+                    Recent Searches
+                </h2>
+
+                <button
+                onclick="clearHistory()"
+                class="clear-btn">
+
+                Clear History
+
+                </button>
+
+            </div>
+
+            <div id="history">
+
+                <div class="history-item">
+                    Dhaka → Khulna (1 KG)
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Why Use Delivery Compare BD?
+            </h2>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>💰 Save Money</h3>
+                <p>
+                    Find the cheapest courier instantly.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⚡ Save Time</h3>
+                <p>
+                    Compare all couriers from one screen.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📍 Coverage Check</h3>
+                <p>
+                    Check service availability before shipping.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📦 Shipment Planning</h3>
+                <p>
+                    Make better delivery decisions.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <h3>
+                🚚 Delivery Compare BD
+            </h3>
+
+            <p>
+                Compare courier charges across Bangladesh.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Delivery Compare BD.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
