@@ -1,0 +1,170 @@
+[
+  {
+    "name": "RedX",
+    "website": "https://redx.com.bd",
+    "rating": 4.7,
+    "inside_dhaka": 60,
+    "outside_dhaka": 130,
+    "cod_charge": 10,
+    "extra_kg_charge": 20,
+    "delivery_time": 2,
+    "pickup_time": "Same day",
+    "settlement_time": "3-5 days",
+    "coverage": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj",
+      "Chattogram",
+      "Sylhet",
+      "Rajshahi",
+      "Khulna",
+      "Barishal",
+      "Rangpur",
+      "Mymensingh"
+    ],
+    "features": {
+      "tracking": true,
+      "api": true,
+      "pickup_home": true,
+      "insurance": true
+    }
+  },
+  {
+    "name": "Pathao Courier",
+    "website": "https://pathao.com/courier",
+    "rating": 4.8,
+    "inside_dhaka": 65,
+    "outside_dhaka": 140,
+    "cod_charge": 15,
+    "extra_kg_charge": 25,
+    "delivery_time": 3,
+    "pickup_time": "Same day",
+    "settlement_time": "2-4 days",
+    "coverage": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Khulna",
+      "Rajshahi",
+      "Narayanganj",
+      "Gazipur"
+    ],
+    "features": {
+      "tracking": true,
+      "api": true,
+      "pickup_home": true,
+      "insurance": true
+    }
+  },
+  {
+    "name": "Steadfast Courier",
+    "website": "https://steadfast.com.bd",
+    "rating": 4.6,
+    "inside_dhaka": 55,
+    "outside_dhaka": 120,
+    "cod_charge": 10,
+    "extra_kg_charge": 18,
+    "delivery_time": 2,
+    "pickup_time": "Same day",
+    "settlement_time": "3-5 days",
+    "coverage": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Rajshahi",
+      "Khulna",
+      "Barishal",
+      "Rangpur",
+      "Mymensingh",
+      "Comilla",
+      "Feni"
+    ],
+    "features": {
+      "tracking": true,
+      "api": true,
+      "pickup_home": true,
+      "insurance": false
+    }
+  },
+  {
+    "name": "Paperfly",
+    "website": "https://paperfly.com.bd",
+    "rating": 4.5,
+    "inside_dhaka": 70,
+    "outside_dhaka": 150,
+    "cod_charge": 12,
+    "extra_kg_charge": 22,
+    "delivery_time": 3,
+    "pickup_time": "Next day",
+    "settlement_time": "4-6 days",
+    "coverage": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Rajshahi",
+      "Khulna",
+      "Barishal"
+    ],
+    "features": {
+      "tracking": true,
+      "api": true,
+      "pickup_home": true,
+      "insurance": true
+    }
+  },
+  {
+    "name": "eCourier",
+    "website": "https://ecourier.com.bd",
+    "rating": 4.4,
+    "inside_dhaka": 60,
+    "outside_dhaka": 135,
+    "cod_charge": 10,
+    "extra_kg_charge": 20,
+    "delivery_time": 3,
+    "pickup_time": "Same day",
+    "settlement_time": "3-7 days",
+    "coverage": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Rajshahi",
+      "Khulna",
+      "Barishal",
+      "Rangpur"
+    ],
+    "features": {
+      "tracking": true,
+      "api": true,
+      "pickup_home": true,
+      "insurance": false
+    }
+  },
+  {
+    "name": "SA Paribahan",
+    "website": "https://saparibahan.com",
+    "rating": 4.2,
+    "inside_dhaka": 50,
+    "outside_dhaka": 110,
+    "cod_charge": 0,
+    "extra_kg_charge": 15,
+    "delivery_time": 4,
+    "pickup_time": "Next day",
+    "settlement_time": "5-7 days",
+    "coverage": [
+      "Dhaka",
+      "Chattogram",
+      "Sylhet",
+      "Rajshahi",
+      "Khulna",
+      "Barishal",
+      "Rangpur",
+      "Mymensingh"
+    ],
+    "features": {
+      "tracking": false,
+      "api": false,
+      "pickup_home": false,
+      "insurance": false
+    }
+  }
+]
